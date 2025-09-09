@@ -1,29 +1,68 @@
-# Python Screening Task 3 – Research Plan
+# FOSSEE Task 3: Student Competence Analysis
+
+## Overview
+This project evaluates open-source AI models for analyzing Python code written by students and generating prompts to assess their competence. The main goal is to identify gaps in reasoning, highlight misconceptions, and encourage deeper understanding without providing direct solutions.
+
+The evaluation focuses on **CodeBERT**, a model designed for code understanding and generation. The Python code snippets used as a **dataset** are stored in the `examples/` folder.
+
+---
 
 ## Research Plan
 
 **Approach to Identifying and Evaluating Models:**  
-I plan to evaluate **CodeBERT**, an open-source model designed for understanding and generating code. I chose this model because it can analyze Python code and has shown strong capabilities in understanding code structure, which is essential for evaluating student competence. My approach involves using a set of Python code examples, feeding them into the model, and checking whether it can identify errors, gaps in reasoning, or areas for improvement. I will also assess whether the model can generate meaningful prompts that encourage deeper learning without giving away the solutions. The evaluation will consider accuracy, clarity, interpretability, and practicality.
+I chose **CodeBERT**, an open-source model optimized for understanding code. Its ability to parse Python syntax and analyze code structure makes it suitable for competence assessment. The evaluation involves feeding Python code snippets from the `examples/` folder into CodeBERT, checking whether it can identify errors, suggest improvements, and generate prompts that encourage conceptual understanding. Key evaluation criteria include **accuracy, interpretability, clarity, and practicality**.
 
 **Testing and Validation:**  
-I will test the model on Python snippets covering loops, functions, data structures, and recursion. The goal is to see if the model can highlight issues, suggest improvements, and produce prompts that guide conceptual understanding. I will consider trade-offs between accuracy, interpretability, and computational cost. CodeBERT’s strengths include its code comprehension and prompt generation abilities, while limitations may include handling highly complex or ambiguous code. This approach ensures a clear, evidence-based evaluation of its suitability for educational use.
+The model will be tested on snippets covering loops, functions, data structures, and recursion. The aim is to verify whether the model can:  
+- Identify coding errors or gaps in reasoning  
+- Generate meaningful prompts for students  
+- Encourage deeper learning without giving away answers  
+
+**Trade-offs:** While CodeBERT is strong in code comprehension, it may struggle with highly complex or ambiguous code. We balance **accuracy, interpretability, and computational cost** in evaluation.
+
+---
 
 ## Reasoning
-- **Model suitability:** CodeBERT can parse Python code and generate useful feedback for competence analysis.
-- **Testing prompts:** I will check if prompts guide students toward understanding rather than providing direct answers.
-- **Trade-offs:** Balancing prompt accuracy, interpretability, and computational resources is key.
-- **Choice justification:** CodeBERT is open-source, accessible, and focused on code-related tasks, making it a strong candidate. Limitations can be managed with proper test examples.
+
+- **Model suitability:** CodeBERT can parse Python code and generate useful feedback for competence analysis.  
+- **Testing prompts:** I will check that prompts guide students toward understanding rather than providing direct answers.  
+- **Trade-offs:** Balancing accuracy, interpretability, and computational resources is key.  
+- **Choice justification:** CodeBERT is open-source, accessible, and focused on code-related tasks, making it a strong candidate. Limitations are manageable with proper test examples.
+
+---
+
+## Folder Structure
+
+FOSSEE Task 3: Student Competence Analysis/
+│
+├── README.md # This file
+├── examples/ # Dataset of Python code snippets
+│ ├── example1.py
+│ ├── example2.py
+│ ├── example3.py
+│ └── example4.py
+├── evaluate_model.py # Script to demonstrate evaluation
+└── requirements.txt # Dependencies
+
+
+**Note:** The `examples/` folder serves as the dataset for evaluation.
+
+---
 
 ## Setup Instructions
-1. Make sure Python 3.10+ is installed.
-2. Install required libraries:
-```bash
-pip install -r requirements.txt
-```
-3. Run the evaluation script to see how the model could analyze code examples:
-```bash
-python evaluate_model.py
-```
 
-## References
-- [CodeBERT on Hugging Face](https://huggingface.co/microsoft/codebert-base)
+1. Install Python 3.10+  
+2. Install required libraries:
+pip install -r requirements.txt
+3. Run the evaluation script:
+python evaluate_model.py
+
+References
+
+CodeBERT on Hugging Face
+
+Author: Chebrolu Chaithanaya Kumar
+
+Email: chaithanyakumar.616@gmail.com
+
+GitHub: https://github.com/2300033094
