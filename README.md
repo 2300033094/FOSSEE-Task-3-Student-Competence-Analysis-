@@ -35,13 +35,21 @@ The model will be tested on snippets covering loops, functions, data structures,
 
 FOSSEE Task 3: Student Competence Analysis/
 │
+
 ├── README.md # This file
+
 ├── examples/ # Dataset of Python code snippets
+
 │ ├── example1.py
+
 │ ├── example2.py
+
 │ ├── example3.py
+
 │ └── example4.py
+
 ├── evaluate_model.py # Script to demonstrate evaluation
+
 └── requirements.txt # Dependencies
 
 
