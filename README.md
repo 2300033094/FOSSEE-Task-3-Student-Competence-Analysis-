@@ -71,6 +71,6 @@ CodeBERT on Hugging Face
 
 Author: Chebrolu Chaithanaya Kumar
 
-Email: chaithanyakumar.616@gmail.com
+Email: 2300033094cseh1@gmail.com
 
 GitHub: https://github.com/2300033094
