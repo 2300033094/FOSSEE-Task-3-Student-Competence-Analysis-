@@ -17,7 +17,7 @@ def evaluate_code(code_snippet):
     print("---")
 
 # Loop through all example files and evaluate
-example_files = ["examples/example1.py", "examples/example2.py", "examples/example3.py", "examples/example4.py"]
+example_files = ["/content/example1.py", "/content/example2.py", "/content/example3.py", "/content/example4.py"]
 for file_path in example_files:
     with open(file_path, "r") as f:
         code = f.read()
